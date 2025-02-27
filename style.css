@@ -5,7 +5,6 @@ body{
   }
 
 img{
-    
     width: 80px;
     height: 80px;
     border: 2px solid black;
@@ -19,6 +18,7 @@ header{
 
 h1{
     margin-left: 20px;
+    text-align: center;
 }
 
 #caixa-do-formulario{
@@ -50,4 +50,8 @@ table{
 
 td, th{
     border: 2px solid black;
+}
+
+tr{
+    text-align: center;
 }

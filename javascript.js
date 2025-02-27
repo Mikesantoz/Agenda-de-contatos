@@ -1,16 +1,23 @@
-let form = document.getElementById('formulario-principal');
+let formulario = document.getElementById('formulario-principal');
 
+let adicionar_html = '';
 
+formulario.addEventListener('submit',function(e){
+    e.preventDefault();
 
+    let nome_do_contato = document.getElementById('nome').value;
+    let numero_do_contato = document.getElementById(`numero-de-telefone`).value;
 
-function adicionar(){
+    let adicionar = `<tr>`;
+    adicionar += `<td>${nome_do_contato}</td>`;
+    adicionar += `<td>${numero_do_contato}</td>`;
+    adicionar += `</tr>`;
 
+    adicionar_html += adicionar; 
 
+    let valor = document.querySelector('tbody');
+    valor.innerHTML = adicionar_html;
 
-    const nomes = document.getElementeById('nome').valeu;
-    const numero = document.getElementById('numero-de-telefone').Value;
-
-    alert('funcionando ');
-};
-
-form.addEventListener('submit', adicionar());
+    document.getElementById('nome').value = '';
+    document.getElementById('numero-de-telefone').value = '';
+});
