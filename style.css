@@ -1,3 +1,53 @@
 body{
     background-color: rgba(128, 128, 128, 0.369);
+    font-family: "Playfair Display", serif;
+    margin-top: 70px;
+  }
+
+img{
+    
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 135px;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+#caixa-do-formulario{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+button{
+    margin-left: 15px;
+    background-color: rgb(64, 200, 64);
+}
+
+#caixa-dos-resgistros{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+table{
+    width: 700px;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 2px solid black;
 }
